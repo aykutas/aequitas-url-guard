@@ -44,7 +44,7 @@ if (!logkanal) yeniURL.owner.send(`${entry.executor} isimli kullanıcı sunucunu
 yeniURL.members.ban(entry.executor.id, { reason: `Aequitas URL Koruması!`});
 
 const settings = { url: `https://discord.com/api/v6/guilds/${yeniURL.id}/vanity-url`,
-body: { code: Config.URL }, json: true, method: 'PATCH', headers: { "Authorization": `Bot process.env.token`}};
+body: { code: Config.URL }, json: true, method: 'PATCH', headers: { "Authorization": `Bot process.env.token` }};
 request(settings, (err, res, body) => { if (err) { return console.log(err)}})});
 //∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞\\
 
