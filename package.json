@@ -1,0 +1,15 @@
+{
+  "author": "aequitas",
+  "main": "shard.js",
+  "scripts": {
+    "start": "node shard.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.2",
+    "request": "^2.88.2",
+    "moment": "^2.29.1"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
