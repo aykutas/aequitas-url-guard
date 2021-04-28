@@ -41,7 +41,7 @@ __**∞ | URL Çalınmaya Çalışıldı | ∞**__
 > Url eski haline getirildi ve hedef kullanıcı sunucudan yasaklandı!`))
 if (!logkanal) yeniURL.owner.send(`${entry.executor} isimli kullanıcı sunucunun urlsini değiştirmeye çalıştı bende onu banladım ve urlyi eski haline getirdim!`)
 
-yeniURL.members.ban(entry.executor.id, { reason: `Aequitas URL Koruması!`});
+yeniURL.members.ban(entry.executor.id, { reason: `Aequitas URL Koruması!` });
 
 const settings = { url: `https://discord.com/api/v6/guilds/${yeniURL.id}/vanity-url`,
 body: { code: Config.URL }, json: true, method: 'PATCH', headers: { "Authorization": `Bot process.env.token` }};
